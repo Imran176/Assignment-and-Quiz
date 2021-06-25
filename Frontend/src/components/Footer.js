@@ -36,7 +36,7 @@ function Footer() {
               <ui className="list-unstyled">
                 <li><FacebookIcon  /></li>
                 <li><TwitterIcon /></li>
-                <li><InstagramIcon color="secondary"/></li>
+                <li><InstagramIcon /></li>
               </ui>
             </div>
           
