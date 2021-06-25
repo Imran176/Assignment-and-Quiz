@@ -16,9 +16,13 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <Router>
+    <div className="page-container">
+      <div className="content-wrap">
+      <Router>
       <div>
         <ToastContainer />
         <TopMenu />
@@ -38,6 +42,10 @@ function App() {
         </div>
       </div>
     </Router>
+    </div>
+    <Footer />
+    </div>
+    
   );
 }
 

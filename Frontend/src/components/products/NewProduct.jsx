@@ -9,6 +9,7 @@ const NewProduct = (props) => {
   console.log(props);
   const [name, setName] = React.useState("");
   const [price, setPrice] = React.useState(0);
+  const [description, setDescription] = React.useState("");
   const [pic, setPic] = React.useState("");
   const [type, setType] = React.useState("");
   return (
@@ -20,7 +21,7 @@ const NewProduct = (props) => {
         <Grid item xs={3}></Grid>
         <Grid item xs={6}>
           <TextField
-            label="name"
+            label="Name"
             fullWidth
             value={name}
             onChange={(e) => {
@@ -28,7 +29,15 @@ const NewProduct = (props) => {
             }}
           />
           <TextField
-            label="pic"
+            label="Description"
+            fullWidth
+            value={description}
+            onChange={(e) => {
+              setDescription(e.target.value);
+            }}
+          />
+          <TextField
+            label="Pic"
             fullWidth
             value={pic}
             onChange={(e) => {
@@ -36,7 +45,7 @@ const NewProduct = (props) => {
             }}
           />
           <TextField
-            label="price"
+            label="Price"
             fullWidth
             value={price}
             onChange={(e) => {
@@ -44,7 +53,7 @@ const NewProduct = (props) => {
             }}
           />
           <TextField
-            label="type"
+            label="Type"
             fullWidth
             value={type}
             onChange={(e) => {
@@ -60,7 +69,7 @@ const NewProduct = (props) => {
             color="primary"
             onClick={(e) => {
               productService
-                .addProduct({ name, price, pic, type })
+                .addProduct({ name, price,description, pic, type })
                 .then((data) => {
                   console.log(data);
                   props.history.push("/products");

@@ -1,6 +1,5 @@
   import React from "react";
   import { Link } from "react-router-dom";
-
   import { makeStyles } from "@material-ui/core/styles";
   import { AppBar, Toolbar, Typography, Button } from "@material-ui/core";
   import userService from "../services/UserService";
@@ -15,7 +14,7 @@
     const classes = useStyles();
     return (
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar className="Navbar">
           <Typography variant="h6">
             <Link to="/" className={classes.link}>
               Home

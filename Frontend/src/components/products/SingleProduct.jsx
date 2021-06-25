@@ -79,8 +79,7 @@ const SingleProduct = (props) => {
                 {product.price}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
+              {product.description}
               </Typography>
             </CardContent>
           </CardActionArea>
@@ -146,8 +145,7 @@ const SingleProduct = (props) => {
                 {product.price}
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                across all continents except Antarctica
+                {product.discription}
               </Typography>
             </CardContent>
           </CardActionArea>

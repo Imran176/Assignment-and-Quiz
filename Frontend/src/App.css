@@ -13,6 +13,16 @@
   }
 }
 
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap{
+  flex: 1;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -37,9 +47,20 @@
   }
 }
 
+.Navbar{
+  background-color: #1b75be;
+}
+
 .myVideo {
   right: 0;
+  left: 0;
+  top: 0;
  bottom: 0;
  width: 100%; 
- height: 100%; 
+ height: 100%;
+
+}
+.Video{
+  padding: -50px;
+  margin: -10px;
 }

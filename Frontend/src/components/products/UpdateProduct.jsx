@@ -6,7 +6,10 @@ import Admin from "../auth/Admin";
 
 const UpdateProduct = (props) => {
   const [name, setName] = React.useState("");
+  const [description, setDescription] = React.useState("");
   const [price, setPrice] = React.useState(0);
+  const [pic, setPic] = React.useState("");
+  const [type, setType] = React.useState("");
   const id = props.match.params.id;
   React.useEffect(() => {
     productService.getSingleProduct(id).then((data) => {
@@ -23,7 +26,7 @@ const UpdateProduct = (props) => {
         <Grid item xs={3}></Grid>
         <Grid item xs={6}>
           <TextField
-            label="name"
+            label="Name"
             fullWidth
             value={name}
             onChange={(e) => {
@@ -31,11 +34,35 @@ const UpdateProduct = (props) => {
             }}
           />
           <TextField
-            label="price"
+            label="Description"
+            fullWidth
+            value={description}
+            onChange={(e) => {
+              setDescription(e.target.value);
+            }}
+          />
+          <TextField
+            label="Price"
             fullWidth
             value={price}
             onChange={(e) => {
               setPrice(e.target.value);
+            }}
+          />
+          <TextField
+            label="Pic"
+            fullWidth
+            value={pic}
+            onChange={(e) => {
+              setPic(e.target.value);
+            }}
+          />
+          <TextField
+            label="Type"
+            fullWidth
+            value={type}
+            onChange={(e) => {
+              setType(e.target.value);
             }}
           />
         </Grid>
@@ -47,7 +74,7 @@ const UpdateProduct = (props) => {
             color="primary"
             onClick={(e) => {
               productService
-                .updateProduct(id, { name, price })
+                .updateProduct(id, { name, price, description, pic,type })
                 .then((data) => {
                   console.log(data);
                   props.history.push("/products");

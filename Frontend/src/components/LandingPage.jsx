@@ -6,9 +6,11 @@ import "../App.css"
 const LandingPage = () => {
   return (
     <div>
+    <div className="Video">
       <video autoplay="autoplay" muted loop="loop" className="myVideo">
       <source src={Video} type="video/mp4" />
       </video>
+    </div>
       <Products types="home" show="2"  />
     </div>
   );

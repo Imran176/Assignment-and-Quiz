@@ -30,6 +30,7 @@ router.put("/:id", async (req, res) => {
   let product = await Product.findById(req.params.id);
   product.name = req.body.name;
   product.price = req.body.price;
+  product.description = req.body.description;
   product.pic = req.body.pic;
   product.type = req.body.type;
   await product.save();
@@ -45,6 +46,7 @@ router.post("/", async (req, res) => {
   let product = new Product();
   product.name = req.body.name;
   product.price = req.body.price;
+  product.description = req.body.description;
   product.pic = req.body.pic;
   product.type = req.body.type;
   await product.save();
