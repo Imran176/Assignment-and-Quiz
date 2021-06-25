@@ -2,6 +2,9 @@ import React from "react";
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import PhoneIcon from '@material-ui/icons/Phone';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import ContactSupportIcon from '@material-ui/icons/ContactSupport';
 import "./Footer.css";
 
 function Footer() {
