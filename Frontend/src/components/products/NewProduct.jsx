@@ -16,7 +16,7 @@ const NewProduct = (props) => {
     <Auth>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <h1>Add New Product</h1>
+          <h1>Add New Room</h1>
         </Grid>
         <Grid item xs={3}></Grid>
         <Grid item xs={6}>
