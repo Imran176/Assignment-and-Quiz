@@ -48,9 +48,9 @@
             </>
           ) : (
             <Button
-              variant="contained"
-              color="primary"
-              onClick={(e) => {
+                variant="contained"
+                color="secondary"
+                onClick={(e) => {
                 userService.logout();
                 window.location.reload();
               }}
