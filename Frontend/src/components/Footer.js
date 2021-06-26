@@ -15,7 +15,7 @@ function Footer() {
           {/* Column1 */}
             <div className="col">
               <h3>CONTACT INFO</h3>
-			  <h4><PhoneIcon />342-420-6969</h4>
+			        <h4><PhoneIcon />342-420-6969</h4>
               <h4><LocationOnIcon/>123 Streeet Model Town, Lahore</h4>
               <h4><ContactSupportIcon/>support@luxurylife.com</h4>
             </div>

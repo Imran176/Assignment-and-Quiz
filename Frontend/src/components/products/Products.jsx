@@ -41,7 +41,7 @@ const Products = (props) => {
   };
   return (
     <div>
-      <h1>Rooms</h1>
+      <h1 style={{textAlign:'center', fontSize:'3rem', color: 'red', marginTop:'30px', marginBottom:'30px'}}>Available Rooms</h1>
 
       {userService.isLoggedIn() && (
         <Fab

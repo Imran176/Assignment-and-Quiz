@@ -33,9 +33,9 @@ const SingleProduct = (props) => {
             {userService.isAdmin() && (
               <>
                 <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={(e) => {
+                    variant="contained"
+                    color="primary"
+                    onClick={(e) => {
                     console.log("navigate to update");
                     history.push("/products/update/" + product._id);
                   }}
@@ -84,7 +84,8 @@ const SingleProduct = (props) => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" variant="contained" color="secondary">  
+            <Button size="small" variant="contained" color="secondary" onClick={(e) => {
+                   history.push("/booknow/")}}>  
               Book Now!
             </Button>
           </CardActions>
@@ -150,7 +151,8 @@ const SingleProduct = (props) => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small" variant="contained" color="secondary">  
+            <Button size="small" variant="contained" color="secondary" onClick={(e) => {
+                   history.push("/booknow/")}}>
               Book Now!
             </Button>
           </CardActions>

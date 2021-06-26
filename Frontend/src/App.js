@@ -17,6 +17,7 @@ import Register from "./components/auth/Register";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/Footer";
+import BookNow from "./components/BookNow";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/products/:page?" component={Products} />
             <Route path="/not-found" component={NotFound} />
             <Route path="/" exact component={LandingPage} />
+            <Route path="/booknow" component={BookNow} />
             <Redirect to="/not-found" />
           </Switch>
         </div>

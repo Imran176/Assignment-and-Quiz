@@ -7,6 +7,8 @@
     link: {
       color: "white",
       paddingRight: "1rem",
+      textDecoration: "none",
+      marginLeft: "45px",
     },
   }));
 
