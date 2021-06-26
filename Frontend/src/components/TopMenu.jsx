@@ -19,7 +19,7 @@
         <Toolbar className="Navbar">
           <Typography variant="h6">
             <Link to="/" className={classes.link}>
-              Home
+              LUXURY LIVING
             </Link>
           </Typography>
           <Typography variant="h6">
