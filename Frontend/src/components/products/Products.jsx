@@ -45,7 +45,7 @@ const Products = (props) => {
 
       {userService.isLoggedIn() && (
         <Fab
-          color="primary"
+          color="secondary"
           aria-label="add"
           className={classes.addBtn}
           onClick={handleNewProductClick}
@@ -54,7 +54,7 @@ const Products = (props) => {
         </Fab>
       )}
       {products.length == 0 ? (
-        <p>There are no products</p>
+        <p>There are no Room Available at this movement</p>
       ) : (
         <Grid container spacing={3}>
           {products.map((product, index) => (
